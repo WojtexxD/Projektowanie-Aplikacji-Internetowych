@@ -60,7 +60,7 @@ nav ul li a:hover
 	background-color: gray;
 	color: black;
 }
-div
+.formularz
 {
 	height: calc(100vh - 26px);
 	width: 100%;
@@ -71,6 +71,24 @@ div
 	color: white;
 	border: 1px solid gray;
 	box-sizing: border-box;
+}
+.test-block
+{
+	width: 300px;
+	border: 2px solid rgba(40,40,40,1);
+	background: rgba(40,40,40,0.7);
+	text-align: center;
+	color: #FFF;
+	padding: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 footer{
     width: 100%;
