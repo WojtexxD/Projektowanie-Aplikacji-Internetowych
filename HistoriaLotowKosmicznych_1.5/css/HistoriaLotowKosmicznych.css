@@ -20,7 +20,7 @@ nav
 }
 nav>ul
 {
-	width: 25%;
+	width: 20%;
 	display: flex;
 }
 nav>ul>li
@@ -83,7 +83,7 @@ main section
 	background-position: fixed;
 	z-index: 2;
 }
-div
+.ind
 {
 	width: calc(100%-200px);
 	padding-top: 30px;

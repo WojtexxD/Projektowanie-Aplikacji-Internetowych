@@ -1,82 +1,39 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<?php
+	if($_GET['idp']=='Statki_kosmiczne')$strona='Subpages/Statki kosmiczne.html';
+?>
 
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="../css/Statki kosmiczne.css">
-		<link rel="shortcut icon" href="../Image/Logo.jpg">
-		<script src="../js/timedate.js" type="text/javascript"> </script>
-	</head>
-	
-	<body onload="startclock()">
-		<nav>
-			<ul>
-				<li><a href="Historia.html"> Historia </a></li>
-			</ul>
-			<ul>
-				<li><a href=""> Ciała niebieskie </a>
-					<ol>
-						<li><a href="Planety.html"> Planety </a></li>
-						<li><a href="Planety_Karlowate.html"> Planety karłowate </a></li>
-						<li><a href="Ksiezyce_Planet.html"> Księżyce planet </a></li>
-					</ol>
-				</li>
-			</ul>
-			<ul>
-				<li><a href=""> Galeria </a>
-					<ol>
-						<li><a href="Statki kosmiczne.html"> Statki kosmiczne </a></li>
-						<li><a href="Wyslani w kosmos.html"> Wysłani w kosmos (zwierzęta/ludzie) </a></li>
-					</ol>
-				</li>
-			</ul>
-			<ul>
-				<li><a href="Kontakt.html"> Kontakt </a></li>
-			</ul>
-			<ul>
-				<li><a href="../HistoriaLotowKosmicznych.html"> Powrót </a></li>
-			</ul>
-		</nav>
 		<header>
 			<h1> <b> Jeśli chcecie zobaczyć nazwę statku najedźcie na obraz i chwile poczekajcie </b> </h1>
-			<div> 
-				<img src="../Image/Statki/Apollo13.jpg" alt="Apollo13" title="Apollo13">
-				<img src="../Image/Statki/Atlantis.jpg" alt="Atlantis" title="Atlantis">
-				<img src="../Image/Statki/Columbia.jpg" alt="Columbia" title="Columbia">
+			<div class="obraz">
+				<img src="Image/Statki/Apollo13.jpg" alt="Apollo13" title="Apollo13">
+				<img src="Image/Statki/Atlantis.jpg" alt="Atlantis" title="Atlantis">
+				<img src="Image/Statki/Columbia.jpg" alt="Columbia" title="Columbia">
 			</div>
-			<div> 
-				<img src="../Image/Statki/Dragon_1.jpg" alt="Dragon_1" title="Dragon_1">
-				<img src="../Image/Statki/Dragon_XL.jpg" alt="Dragon_XL" title="Dragon_XL">
-				<img src="../Image/Statki/Endeavour.jpg" alt="Endeavour" title="Endeavour">
+			<div class="obraz">
+				<img src="Image/Statki/Dragon_1.jpg" alt="Dragon_1" title="Dragon_1">
+				<img src="Image/Statki/Dragon_XL.jpg" alt="Dragon_XL" title="Dragon_XL">
+				<img src="Image/Statki/Endeavour.jpg" alt="Endeavour" title="Endeavour">
 			</div>
-			<div> 
-				<img src="../Image/Statki/Eterprise.jpg" alt="Eterprise" title="Eterprise">
-				<img src="../Image/Statki/Gemini.jpg" alt="Gemini" title="Gemini">
-				<img src="../Image/Statki/Hermes.jpg" alt="Hermes" title="Hermes">
+			<div class="obraz">
+				<img src="Image/Statki/Eterprise.jpg" alt="Eterprise" title="Eterprise">
+				<img src="Image/Statki/Gemini.jpg" alt="Gemini" title="Gemini">
+				<img src="Image/Statki/Hermes.jpg" alt="Hermes" title="Hermes">
 			</div>
-			<div> 
-				<img src="../Image/Statki/Mercury.jpg" alt="Mercury" title="Mercury">
-				<img src="../Image/Statki/Sojuz.jpg" alt="Sojuz" title="Sojuz">
-				<img src="../Image/Statki/Shenzhou.png" alt="Shenzhou" title="Shenzhou">
+			<div class="obraz">
+				<img src="Image/Statki/Mercury.jpg" alt="Mercury" title="Mercury">
+				<img src="Image/Statki/Sojuz.jpg" alt="Sojuz" title="Sojuz">
+				<img src="Image/Statki/Shenzhou.png" alt="Shenzhou" title="Shenzhou">
 			</div>
-			<div> 
-				<img src="../Image/Statki/Oriol.jpg" alt="Oriol" title="Oriol">
-				<img src="../Image/Statki/Orion_2006.jpg" alt="Orion_2006" title="Orion_2006">
-				<img src="../Image/Statki/Orion_2013.jpg" alt="Orion_2013" title="Orion_2013">
+			<div class="obraz">
+				<img src="Image/Statki/Oriol.jpg" alt="Oriol" title="Oriol">
+				<img src="Image/Statki/Orion_2006.jpg" alt="Orion_2006" title="Orion_2006">
+				<img src="Image/Statki/Orion_2013.jpg" alt="Orion_2013" title="Orion_2013">
 			</div>
-			<div> 
-				<img src="../Image/Statki/Starliner.jpg" alt="Starliner" title="Starliner">
-				<img src="../Image/Statki/Woschod.png" alt="Woschod" title="Woschod">
-				<img src="../Image/Statki/Wostok.jpg" alt="Wostok" title="Wostok">
+			<div class="obraz">
+				<img src="Image/Statki/Starliner.jpg" alt="Starliner" title="Starliner">
+				<img src="Image/Statki/Woschod.png" alt="Woschod" title="Woschod">
+				<img src="Image/Statki/Wostok.jpg" alt="Wostok" title="Wostok">
 			</div>
 		</header>
-		<footer>
-			<h4 id="zegarek"> </h4>
-			<h4 id="data"> </h4>
-			<h6> Programista: Wojciech Czerniak </h6>
-			<h6> Wszelkie prawa zastrzeżone </h6>
-		</footer>
-	</body>
-</html>
