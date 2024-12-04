@@ -4,9 +4,9 @@
 		global $link;
 
 		$id = intval($_POST['id']);
-		$title = mysqli_real_escape_string($link, $_POST['title']);
-		$content = mysqli_real_escape_string($link, $_POST['page_content']);
-		$is_active = isset($_POST['status']) ? 1 : 0;
+		$page_title = mysqli_real_escape_string($link, $_POST['page_title']);
+		$page_content = mysqli_real_escape_string($link, $_POST['page_content']);
+		$status = isset($_POST['status']) ? 1 : 0;
 
 		$query = "UPDATE page_list SET page_title = ?, page_content = ?, status = ? WHERE id = ?";
 		$stmt = mysqli_prepare($link, $query);
@@ -15,7 +15,7 @@
 			die("Błąd SQL: " . mysqli_error($link));
 		}
 
-		mysqli_stmt_bind_param($stmt, "ssii", $title, $content, $is_active, $id);
+		mysqli_stmt_bind_param($stmt, "ssii", $page_title, $page_content, $status, $id);
 
 		if (mysqli_stmt_execute($stmt)) {
 			echo "Podstrona została zaktualizowana pomyślnie.";
